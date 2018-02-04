@@ -1,6 +1,6 @@
 # _Causal Inference_ Python Code
 
-This repo contains Python code for the book _Causal Inference_ Part II, by Miguel Hernán and James Robbins ([book site]](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)).
+This repo contains Python code for the book _Causal Inference_ Part II, by Miguel Hernán and James Robbins ([book site](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)).
 
 The code here roughly corresponds to the Stata, R, or SAS programs found at the book site.
 
