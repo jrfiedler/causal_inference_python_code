@@ -1,0 +1,55 @@
+# Chapter 11 Alternative Method of Calculating the Expected Value of Y When A = 90
+
+# Set-up
+%matplotlib inline
+import warnings
+warnings.filterwarnings('ignore')
+import numpy as np
+import pandas as pd
+import statsmodels.api as sm
+import scipy.stats
+import matplotlib.pyplot as plt
+from sklearn import linear_model
+from statsmodels.sandbox.regression.predstd import wls_prediction_std
+
+# Generate artificial data A & Y
+# Zip zips the values in columns 
+A, Y = zip(*(
+    (3, 21),
+    (11, 54),
+    (17, 33),
+    (23, 101),
+    (29, 85),
+    (37, 65),
+    (41, 157),
+    (53, 120),
+    (67, 111),
+    (79, 200),
+    (83, 140),
+    (97, 220),
+    (60, 230),
+    (71, 217),
+    (15, 11),
+    (45, 190),
+))
+
+# Creating a dataframe with 3 columns 'A', 'Y' ,'constant'
+df3 = pd.DataFrame({'A': A, 'Y': Y, 'constant': np.ones(16)})
+
+# ols = ordinary least squares regression method
+model = sm.OLS(Y, df3[['constant', 'A']])
+# Fitting the model
+res = model.fit()
+# Print the OLS Regression Results Table
+summary = res.summary()
+#[1] means that you only print out the middle section instead of the whole table
+summary.tables[1]
+
+
+# Alternative method of calculating the expected value of Y when A =90
+# .get_prediction is an easier way of calculating the expected value and 95% CI
+pred = res.get_prediction(exog=[1,90])
+# Will generate error message, but used to call out the data in a dataframe     
+pred.summary_frame()   
+# Final table showing both the estimate and 95% CI
+pred.table
