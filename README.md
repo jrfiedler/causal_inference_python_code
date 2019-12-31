@@ -1,6 +1,8 @@
-# _Causal Inference_ Python Code
+# Python Code for _Causal Inference: What If_
 
-This repo contains Python code for the book _Causal Inference_ Part II, by Miguel Hernán and James Robins ([book site](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)).
+This repo contains Python code for Part II of the book _Causal Inference: What If_, by Miguel Hernán and James Robins ([book site](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)):
+
+> Hernán MA, Robins JM (2020). _Causal Inference: What If_. Boca Raton: Chapman & Hall/CRC.
 
 The code here roughly corresponds to the Stata, R, or SAS programs found at the book site.
 
@@ -17,7 +19,7 @@ Required Python packages:
 - linearmodels
 - tqdm
 
-If you use the [Anaconda](https://www.anaconda.com/download/) distribution of Python, you'll have most of those packages already, and you'll only need to install
+If you use the [Anaconda](https://www.anaconda.com/distribution/) distribution of Python, you'll have most of those packages already, and you'll only need to install
 
 - linearmodels
 - tqdm
@@ -32,4 +34,4 @@ The notebooks all assume that the Excel version of the data has been saved in th
 
 ## Author
 
-James Fiedler
+James Fiedler, with contributions from [Petty PY Chen](https://github.com/pettypychen) and [Piyush Madan](https://github.com/piyushmadan)
