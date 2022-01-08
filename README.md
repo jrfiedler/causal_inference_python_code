@@ -4,7 +4,9 @@ This repo contains Python code for Part II of the book _Causal Inference: What I
 
 > Hernán MA, Robins JM (2020). _Causal Inference: What If_. Boca Raton: Chapman & Hall/CRC.
 
-The code here roughly corresponds to the Stata, R, or SAS programs found at the book site.
+This Python version roughly corresponds to the Stata, R, or SAS programs found at the book site, and was also translated into Julia, [here](http://www.github.com/jrfiedler/causal_inference_julia_code).
+
+The code in this repo has been checked against the 30 March 2021 version of the book.
 
 
 ## Python dependencies
